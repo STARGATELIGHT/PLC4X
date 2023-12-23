@@ -1,0 +1,21 @@
+pipeline{
+
+    agent  any
+
+    stages{
+
+        stage('CONTINUES DOWNLOAD'){
+            steps{
+                git branch: 'main', url: 'https://github.com/STARGATELIGHT/PLC4X.git'
+            }
+        }
+
+
+    }
+    stage('UNIT TEST'){
+
+        steps{
+            sh 'mvn test'
+        }
+    }
+}
