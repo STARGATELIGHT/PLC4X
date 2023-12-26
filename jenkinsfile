@@ -7,7 +7,7 @@ pipeline{
         stage('Continues Download'){
 
             steps{
-                git branch: 'main',url 'https://github.com/STARGATELIGHT/PLC4X.git'
+                git branch: 'main', url: 'https://github.com/STARGATELIGHT/PLC4X.git'
             
             }
         }
