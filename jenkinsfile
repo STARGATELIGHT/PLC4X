@@ -11,10 +11,10 @@ pipeline{
             
             }
         }
-        stage('Unit test'){
+        stage('Continues Build'){
 
             steps{
-                sh 'mvn test'
+                sh 'mvn Clean install'
             }
         }
     }
