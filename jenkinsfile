@@ -4,18 +4,12 @@ pipeline{
 
     stages{
 
-        stage('CONTINUES DOWNLOAD'){
+        stage('Continues Download'){
+
             steps{
-                git branch: 'main', url: 'https://github.com/STARGATELIGHT/PLC4X.git'
+                git branch: 'main',url 'https://github.com/STARGATELIGHT/PLC4X.git'
+            
             }
-        }
-
-
-    }
-    stage('UNIT TEST'){
-
-        steps{
-            sh 'mvn test'
         }
     }
 }
